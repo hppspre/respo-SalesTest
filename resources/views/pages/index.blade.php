@@ -47,12 +47,12 @@
                               <td>{{$item->current_route}}</td>
 
                               <td><button type="button" class="btn btn-primary btn-sm view"
-                                data-name={{$item->full_name}}
-                                data-email={{$item->Email_address}}
-                                data-teli={{$item->Teliphone}}
-                                data-joindate={{$item->joind_date}}
-                                data-currentRoute={{$item->current_route}}
-                                data-comment={{$item->Comments}}
+                                data-name="{{$item->full_name}}"
+                                data-email="{{$item->Email_address}}"
+                                data-teli="{{$item->Teliphone}}"
+                                data-joindate="{{$item->joind_date}}"
+                                data-currentRoute="{{$item->current_route}}"
+                                data-comment="{{$item->Comments}}"
                                 >View</button>
                               </td>
 

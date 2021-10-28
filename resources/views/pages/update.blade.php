@@ -84,11 +84,11 @@
                                 <label class="small"> Current Route</label>
                                 <br>
                                 <select class="form-control" name="current_route">
-                                    <option value="Route one" {{ $data[0]->Comments == 'Route one' ? 'selected' : 'data-id' }}>one</option>
-                                    <option value="Route two" {{ $data[0]->Comments == 'Route two' ? 'selected' : 'data-id' }}>two</option>
-                                    <option value="Route tree" {{ $data[0]->Comments == 'Route tree' ? 'selected' : 'data-id' }}>tree</option>
-                                    <option value="Route four" {{ $data[0]->Comments == 'Route four' ? 'selected' : 'data-id' }}>four</option>
-                                    <option value="Route Five" {{ $data[0]->Comments == 'Route Five' ? 'selected' : 'data-id' }}>Five</option>
+                                    <option value="Route one" {{ $data[0]->current_route == 'Route one' ? 'selected' : 'data-id' }}>one</option>
+                                    <option value="Route two" {{ $data[0]->current_route == 'Route two' ? 'selected' : 'data-id' }}>two</option>
+                                    <option value="Route tree" {{ $data[0]->current_route == 'Route tree' ? 'selected' : 'data-id' }}>tree</option>
+                                    <option value="Route four" {{ $data[0]->current_route == 'Route four' ? 'selected' : 'data-id' }}>four</option>
+                                    <option value="Route Five" {{ $data[0]->current_route == 'Route Five' ? 'selected' : 'data-id' }}>Five</option>
                                 </select>
                                 @error('joind_date')
                                     <span class="invalid-feedback d-block" role="alert">

@@ -1,17 +1,25 @@
 $(document).ready(function () {
 
+    let openModal = ()=>{
+        $('#sales_data').modal('show');
+    }
 
     $(document).on('click','.view',function(){
-        
-        $(".name").text($(this).attr('data-name'))
-        $(".email").text($(this).attr('data-email'))
-        $(".teli").text($(this).attr('data-teli'))
-        $(".joindate").text($(this).attr('data-joindate'))
-        $(".currentRoute").text($(this).attr('data-currentRoute'))
-        $(".comment").text($(this).attr('data-comment'))
 
+        let userData = [
+                            {title:'name',attr:'data-name'},
+                            {title:'email',attr:'data-email'},
+                            {title:'teli',attr:'data-teli'},
+                            {title:'joindate',attr:'data-joindate'},
+                            {title:'currentRoute',attr:'data-currentRoute'},
+                            {title:'comment',attr:'data-comment'},
+                       ]
 
-        $('#sales_data').modal('show');
+        userData.map((data,index)=>{
+            $(`.${data['title']}`).text($(this).attr(`${data['attr']}`))
+        })
+
+        openModal();
 
 
     })

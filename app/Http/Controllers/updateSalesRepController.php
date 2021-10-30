@@ -42,7 +42,6 @@ class updateSalesRepController extends Controller
 
     function dropSalesPerson(Request $request)
     {
-
         DB::table('new_salespeople')->where([['id','=',$request->id]])->delete();
         echo 'ok';
     }

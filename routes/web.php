@@ -29,5 +29,5 @@ Route::post('update-salesRep','App\Http\Controllers\updateSalesRepController@upd
 
 
 #drop data
-Route::get('drop-sales-person','App\Http\Controllers\updateSalesRepController@dropSalesPerson')->name('drop-sales-person');
+Route::post('drop-sales-person','App\Http\Controllers\updateSalesRepController@dropSalesPerson')->name('drop-sales-person');
 

@@ -20,8 +20,6 @@ $(document).ready(function () {
         })
 
         openModal();
-
-
     })
 
 
@@ -40,12 +38,11 @@ $(document).ready(function () {
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
+
             if (result.isConfirmed) {
-
-
                 $.ajax({
-                    type: 'GET',
-                    url: '/drop-sales-person',
+                    type: 'POST',
+                    url: 'drop-sales-person',
                     data:{'id':id},
                     success: function (data) {
                         
